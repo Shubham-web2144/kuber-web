@@ -1,0 +1,52 @@
+/* responsive for width max 983px */
+
+@media screen and (max-width: 990px) {
+    .mainContainer__service-cards {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .mainConatainer__service-cards-card  {
+        margin: 15px 20px;
+    }
+    .mainContainer__puja-cards  {
+        width: 100%;
+    }
+    .mainContainer__puja-cards-card  {
+        width: 300px;
+        padding: 10px 14px;
+    }
+    .mainContainer__puja-cards-card img {
+        width: 100px;
+        height: 100px;
+    }
+    .mainContainer__about-card {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainContainer__service-cards {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 12px 0px;
+    }
+    .mainContainer__puja-heading {
+        margin-top: 300px;
+    }
+    .mainContainer__puja-cards  {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    } 
+    .mainContainer__puja-cards-card {
+        margin: 12px 0px;
+    }
+    .mainContainer__about-card {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .mainContainer__about-card-cards {
+        width: 100%;
+    }
+}

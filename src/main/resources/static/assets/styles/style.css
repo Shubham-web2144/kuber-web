@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    background: #f1f1f1;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* main container css  */
+
+.mainContainer {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+
+}
+
+/* mainContainer__header csss */
+
+.mainContainer__header {
+    position: relative;
+    width: 100vw;
+    z-index: 1;
+}
+
+/* navbar background color */
+.mainConatainer__navbar-bg {
+    background: #E93C2D;
+    box-shadow: 2px 2px 4px -1px rgba(197, 215, 212, 0.86);
+}
+
+.mainContainer__btn-bg {
+    background: #F1C22F !important;
+    color: white !important;
+}
+
+/* mainContainer__banner css */
+.mainContainer__banner {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.mainContainer__banner-img {
+    height: 500px !important;
+}
+
+/* mainContainer__service css */
+.mainContainer__service {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer__service-heading h3 {
+    position: relative;
+    display: block;
+    color: #E93C2D;
+    margin-bottom: 7px;
+    border-bottom: 2.5px solid red;
+    margin-bottom: 8px;
+}
+
+.mainContainer__service-heading h5 {
+    margin: 7px 0px;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+    font-size: 18px;
+}
+
+.mainContainer__service-cards {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 19px;
+    margin: 10px 0px;
+}
+
+.mainConatainer__service-cards-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 40px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 10px 15px 30px #bebebe,
+        -10px -15px 30px #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: ease-in-out 0.4s;
+    margin: 0px 15px;
+}
+
+.mainConatainer__service-cards-card:hover {
+    background: linear-gradient(145deg, #E93C2D, #F1C22F);
+    color: white;
+    transition: ease-in-out 0.4s;
+}
+
+.material-symbols-outlined {
+    font-size: 70px !important;
+    margin-bottom: 7px;
+}
+
+.mainConatainer__service-cards-card h4 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*mainContainer__puja css*/
+.mainContainer__puja {
+    padding-top: 80px !important;
+    background: #E93C2D;
+    -webkit-clip-path: polygon(0% 30%, 11% 14%, 29% 23%, 43% 8%, 60% 15%, 72% 8%, 86% 13%, 99% 4%, 100% 98%, 0% 99%);
+    clip-path: polygon(0% 30%, 11% 14%, 29% 23%, 43% 8%, 60% 15%, 72% 8%, 86% 13%, 99% 4%, 100% 98%, 0% 99%);
+}
+
+.mainContainer__puja-heading {
+    position: relative;
+    margin-top: 90px;
+}
+
+.mainContainer__puja-heading h3 {
+    color: white !important;
+    border-bottom: 3px solid white;
+}
+
+.mainContainer__puja-heading h5 {
+    color: white !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+
+.mainContainer__puja-cards {
+    position: relative;
+    width: calc(100% - 200px);
+    padding: 30px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.mainContainer__puja-cards-card {
+    position: relative;
+    width: 250px;
+    height: 220px;
+    border-radius: 28px;
+    background: #E93C2D;
+    box-shadow: 6px 6px 5px #b62f23,
+        -6px -6px 5px #ff4937;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    margin: 0px 15px;
+}
+.mainContainer__puja-cards-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 999px;
+    margin-bottom: 7px;
+}
+.mainContainer__puja-cards-card h4 {
+    color: white;
+}
+
+/*mainContainer__about css */
+.mainContainer__about {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 28px;
+}
+
+.mainContainer__about-card {
+    width: calc(100% - 200px);
+    min-height: calc(100% - 10px);
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 12px 15px 24px rgba(0,0,0,0.1);
+}
+.mainContainer__about-card-cards {
+    position: relative;
+    width: 25%;
+/*    height: 100%;*/
+    background: #E93C2D;
+    padding: 18px 25px;
+    color: #f1f1f1;
+}
+.mainContainer__about-card-cards:nth-child(even) {
+    background: #F1C22F;
+}
+.mainContainer__about-card-cards .material-symbols-outlined {
+    margin: 10px 0px;
+    font-weight: 500;
+}
+.mainContainer__about-card-cards h2 {
+    color: white !important;
+    font-weight: 600;
+    margin: 4px 0px;
+    font-size: 35px;
+}
+.mainContainer__about-card-cards h3 {
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+.mainContainer__about-card-cards p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 6px;
+} 
+
+/*footer css */
+.mainContainer__footer {
+    position: relative;
+    width: 100%;
+    background: #E93C2D !important;
+    color: white !important;
+}
+
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+.fa-brands {
+  color: #ffc371 !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
