@@ -15,7 +15,7 @@
 	<name>Kuber_Puja_Website</name>
 	<description>This is a kuber puja web project. In spring boot, java and html, css and js.</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
